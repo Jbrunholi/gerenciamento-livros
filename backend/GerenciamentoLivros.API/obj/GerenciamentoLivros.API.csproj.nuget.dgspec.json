@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\gerenciamento-livros\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj": {}
+    "C:\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj": {}
   },
   "projects": {
-    "C:\\gerenciamento-livros\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj": {
+    "C:\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\gerenciamento-livros\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj",
+        "projectUniqueName": "C:\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj",
         "projectName": "GerenciamentoLivros.API",
-        "projectPath": "C:\\gerenciamento-livros\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj",
+        "projectPath": "C:\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\GerenciamentoLivros.API.csproj",
         "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\gerenciamento-livros\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\obj\\",
+        "outputPath": "C:\\gerenciamento-livros\\backend\\GerenciamentoLivros.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,13 +45,43 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.4, )"
             },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.2, )"
             }
           },
           "imports": [
