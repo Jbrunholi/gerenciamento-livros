@@ -1,0 +1,39 @@
+<div class="list-container">
+  <h2>Listagem de Livros</h2>
+  <table mat-table [dataSource]="livros" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="titulo">
+      <th mat-header-cell *matHeaderCellDef> Título </th>
+      <td mat-cell *matCellDef="let livro"> {{livro.titulo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="autor">
+      <th mat-header-cell *matHeaderCellDef> Autor </th>
+      <td mat-cell *matCellDef="let livro"> {{livro.autor}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="genero">
+      <th mat-header-cell *matHeaderCellDef> Gênero </th>
+      <td mat-cell *matCellDef="let livro"> {{livro.genero}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ano">
+      <th mat-header-cell *matHeaderCellDef> Ano </th>
+      <td mat-cell *matCellDef="let livro"> {{livro.ano}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+      <th mat-header-cell *matHeaderCellDef> Ações </th>
+      <td mat-cell *matCellDef="let livro">
+        <button mat-button color="primary" (click)="editLivro(livro.id)">Editar</button>
+        <button mat-button color="warn" (click)="deleteLivro(livro.id)">Excluir</button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['titulo', 'autor', 'genero', 'ano', 'acoes']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['titulo', 'autor', 'genero', 'ano', 'acoes'];"></tr>
+  </table>
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="addLivro()">Adicionar Livro</button>
+  </div>
+</div>

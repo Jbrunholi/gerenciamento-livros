@@ -1,0 +1,29 @@
+<div class="form-container">
+  <h2>{{ id ? 'Editar Livro' : 'Adicionar Livro' }}</h2>
+  <form [formGroup]="livroForm" (ngSubmit)="saveLivro()">
+    <mat-form-field appearance="fill">
+      <mat-label>Título</mat-label>
+      <input matInput formControlName="titulo" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Autor</mat-label>
+      <input matInput formControlName="autor" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Gênero</mat-label>
+      <input matInput formControlName="genero" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Ano</mat-label>
+      <input matInput type="number" formControlName="ano" />
+    </mat-form-field>
+
+    <div class="button-container">
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+      <button mat-raised-button color="accent" (click)="cancel()">Cancelar</button>
+    </div>
+  </form>
+</div>
